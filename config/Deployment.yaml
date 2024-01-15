@@ -15,5 +15,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx
-        name: nginx
+      - image: mahmood2024/my-nginx:v1
+        name: mahmood2024/my-nginx:v1

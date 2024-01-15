@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - image: mahmood2024/my-nginx:v1
-        name: mahmood2024/my-nginx:v1
+        name: nginx

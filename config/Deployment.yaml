@@ -15,5 +15,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: mahmood2024/my-nginx:v2
+      - image: ghcr.io/izadparast2024/argotest:main
         name: nginx

@@ -15,5 +15,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: ghcr.io/izadparast2024/argotest:v50
+      - image: ghcr.io/izadparast2024/argotest:v51
         name: nginx

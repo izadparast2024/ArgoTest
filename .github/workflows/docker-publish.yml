@@ -96,8 +96,8 @@ jobs:
         # This step uses the identity token to provision an ephemeral certificate
         # against the sigstore community Fulcio instance.
         run: |
-          git config --global user.name "your username"
-          git config --global user.email "your email"
+          git config --global user.name ${{ github.actor }}
+          git config --global user.email "s.m.izadparast@gmail.com"
           git add -A
           git commit -m "commit message"
           git push

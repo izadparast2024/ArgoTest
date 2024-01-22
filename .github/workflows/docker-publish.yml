@@ -82,8 +82,9 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
       - name: Update values.yaml
-        uses: sumup-bank/run-credo@v1
+        uses: ./
         with:
+          repository: sumup-bank/change-commit-yaml
           filepath: 'config/Deployment.yaml'
           yamlpath: 'kind'
           newvalue: Deployment1

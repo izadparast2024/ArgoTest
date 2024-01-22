@@ -100,4 +100,5 @@ jobs:
           git config --global user.email "s.m.izadparast@gmail.com"
           git add -A
           git commit -m "commit message"
-          git push
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push 

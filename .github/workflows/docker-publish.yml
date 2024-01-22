@@ -96,6 +96,8 @@ jobs:
         # This step uses the identity token to provision an ephemeral certificate
         # against the sigstore community Fulcio instance.
         run: |
+          git config --global user.email "s.m.izadparast@gmail.com"
+          git config --global user.name "izadparast2024"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add -A
           git commit -m "commit message"

@@ -87,7 +87,10 @@ jobs:
           valueFile: 'config/Deployment.yaml'
           propertyPath: 'metadata.name'
           value: nginx-deployment11
-          commitChange: true
+          targetBranch: main
+          createPR: 'false'
+          message: 'Update Image Version to v1.0.1'
+          token: ${{ secrets.GH_TOKEN }}
       # Sign the resulting Docker image digest except on PRs.
       # This will only write to the public Rekor transparency log when the Docker
       # repository is public to avoid leaking data.  If you would like to publish

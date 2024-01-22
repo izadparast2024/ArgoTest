@@ -85,8 +85,8 @@ jobs:
         uses: fjogeleit/yaml-update-action@main
         with:
           valueFile: 'config/Deployment.yaml'
-          propertyPath: 'metadata.name'
-          value: nginx-deployment11
+          propertyPath: 'kind'
+          value: Deployment1
           targetBranch: main
           createPR: 'false'
           message: 'Update Image Version to v1.0.1'
